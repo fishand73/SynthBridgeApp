@@ -28,11 +28,38 @@ body {
   padding: 40px 20px;
 }
 
-header {
+header,
+.site-header {
   text-align: center;
   margin-bottom: 40px;
   padding-bottom: 30px;
   border-bottom: 1px solid var(--border);
+}
+
+/* Language toggle: top row, aligned to the right (within .container) */
+.site-header-lang {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.site-header .language-switch {
+  margin: 0;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-card);
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.site-header .language-switch a {
+  margin: 0 8px;
+}
+
+.site-header .language-switch a:hover {
+  text-decoration: underline;
 }
 
 .logo {
@@ -121,6 +148,7 @@ a:hover {
   font-size: 14px;
 }
 
+/* Bottom language bar (index, changelog, etc.) */
 .language-switch {
   text-align: center;
   margin-top: 30px;
@@ -189,6 +217,15 @@ footer {
 @media (max-width: 600px) {
   .container {
     padding: 20px 15px;
+  }
+
+  .site-header-lang {
+    margin-bottom: 10px;
+  }
+
+  .site-header .language-switch {
+    font-size: 13px;
+    padding: 5px 10px;
   }
   
   h1 {
