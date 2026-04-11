@@ -21,14 +21,57 @@
     <h1>Changelog</h1>
 
     <div class="version-item">
+      <div class="version-number">Version 1.12.1</div>
+      <div class="version-date">April 2026</div>
+      <ul>
+        <li>Landscape mode: master volume moved to the header bar as a compact slider, with a drum pad grid replacing the old volume knob area</li>
+        <li>MIDI device connection dialog: redesigned as a two-column layout in landscape for better use of screen space</li>
+        <li>Fixed distortion effect to preserve the original volume when enabled</li>
+        <li>Fixed a crash caused by the Bluetooth permission retry loop on some devices</li>
+      </ul>
+    </div>
+
+    <div class="version-item">
+      <div class="version-number">Version 1.12.0</div>
+      <div class="version-date">April 2026</div>
+      <ul>
+        <li>Cleaner app icon with smoother wave lines</li>
+        <li>Fixed an issue where the privacy policy and terms of service links could not open on some Android devices</li>
+      </ul>
+    </div>
+
+    <div class="version-item">
+      <div class="version-number">Version 1.11</div>
+      <div class="version-date">April 2026</div>
+      <ul>
+        <li><strong>MIDI Library</strong>: folder import, playlists, landscape layout, and scanning progress dialog — smooth even with large song lists</li>
+        <li><strong>Background audio playback</strong>: MIDI music keeps playing after leaving the app, with notification controls</li>
+        <li><strong>20x faster song switching</strong>: instant response when changing tracks</li>
+        <li><strong>Interactive onboarding</strong>: guided tour on first launch for new users</li>
+        <li><strong>Per-feature MIDI channel</strong>: assign separate channels to keyboard, pitch bend, and modulation</li>
+        <li><strong>Richer recording</strong>: pitch bend and modulation events are now captured during recording</li>
+        <li><strong>SoundFont intro</strong>: first-time walkthrough when opening the SoundFont manager</li>
+        <li>Resume label shown when paused with a MIDI file loaded; smooth slide transition when switching songs in the library</li>
+        <li>Edge-to-edge support for Android 15+, round adaptive launcher icon</li>
+        <li>Fixed silence after switching SoundFont mid-playback, stuck notes on exit, and intent-based file opening on cold start</li>
+        <li>Eliminated audio stutter caused by UI interactions</li>
+      </ul>
+    </div>
+
+    <div class="version-item">
+      <div class="version-number">Version 1.10</div>
+      <div class="version-date">April 2026</div>
+      <ul>
+        <li>Landscape pitch bend and modulation wheels now use the same touch-optimized strip as portrait mode for a consistent feel</li>
+        <li>Main screen entry points optimized, with short labels adapted for all languages</li>
+        <li>New SoundFont shortcut in the instrument picker</li>
+      </ul>
+    </div>
+
+    <div class="version-item">
       <div class="version-number">Version 1.0.9</div>
       <div class="version-date">April 2026</div>
       <ul>
-        <li>Added subscription support (International Version)</li>
-        <li>Added custom Paywall design</li>
-        <li>Added subscription check for SoundFont activation</li>
-        <li>CN version: Disabled RevenueCat integration</li>
-        <li>Flavor-based RevenueCat isolation</li>
         <li>Portrait mode MIDI playback track view improvements</li>
         <li>Flattened pitch bend wheel and modulation wheel design</li>
       </ul>
@@ -39,7 +82,7 @@
       <div class="version-date">April 2026</div>
       <ul>
         <li>USB DAC Bit-Perfect mode improvements</li>
-        <li>Added device list with UAC 1.0/2.0 support</li>
+        <li>Added USB audio device list with UAC 1.0/2.0 support</li>
         <li>Added sample rate selection (44.1kHz - 192kHz)</li>
         <li>Added bit depth selection (16/24/32 bit)</li>
         <li>Hot-plug detection for USB audio devices</li>
@@ -52,8 +95,8 @@
       <ul>
         <li>Audio buffer size settings (1x-8x burst size)</li>
         <li>Added 96000Hz sample rate support</li>
-        <li>Audio device change detection</li>
-        <li>Sound settings UI improvements with Zinc 700 theme</li>
+        <li>Automatic audio device change detection</li>
+        <li>Sound settings UI improvements</li>
         <li>Instrument icons for sound selection</li>
       </ul>
     </div>
@@ -65,7 +108,6 @@
         <li>Low latency mode with Oboe Exclusive</li>
         <li>Sample rate selection (44100/48000/Native)</li>
         <li>Global audio configuration support</li>
-        <li>Native sample rate detection API</li>
       </ul>
     </div>
 
@@ -75,7 +117,7 @@
       <ul>
         <li>SoundFont manager optimization</li>
         <li>Fixed memory leak when switching SoundFonts</li>
-        <li>Async file import for smoother experience</li>
+        <li>Async file import for a smoother experience</li>
         <li>WAV and AAC export format options</li>
         <li>Duplicate file name handling</li>
       </ul>
@@ -86,8 +128,9 @@
       <div class="version-date">January 2026</div>
       <ul>
         <li>Initial release</li>
-        <li>BLE/USB/Virtual MIDI input support</li>
-        <li>SF2/SF3 SoundFont playback</li>
+        <li>BLE / USB / Virtual MIDI input support</li>
+        <li>SF2 / SF3 SoundFont playback</li>
+        <li>261 built-in instruments and 13 drum kits</li>
         <li>16-channel multi-timbral synthesis</li>
         <li>Real-time effects (Reverb, Chorus, Distortion, Echo)</li>
         <li>MIDI file playback and recording</li>
