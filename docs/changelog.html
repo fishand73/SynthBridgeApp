@@ -27,6 +27,23 @@
     <h1>Changelog</h1>
 
     <div class="version-item">
+      <div class="version-number">Version 1.12.4</div>
+      <div class="version-date">April 2026</div>
+      <ul>
+        <li>The spectrum animation under "Now Playing" is now driven by the live set of active MIDI notes, so melody and drum hits are reflected directly in the bars</li>
+        <li>Tracks and Lyrics views now show a compact song-title header, so you can see what is playing without switching back to Now Playing</li>
+        <li>Home mini screen INFO view adds a CH10 row that shows the currently loaded drum kit alongside the selected channel's instrument</li>
+        <li>Opening per-channel sound settings from the MIDI player track view is now titled "Playback Sound Settings" — changes only affect the current playback and do not touch your saved channel configuration, with a first-run explanation dialog</li>
+        <li>The second tab on the home mini screen changed from a placeholder waveform visualizer (VIS) to a live MIDI player info panel (PLY) with file name, progress bar and time; it auto-switches whenever a MIDI file is opened or closed</li>
+        <li>Sound settings reached from Home / Settings is now titled "User Sound Settings" to distinguish it from the playback-only variant above</li>
+        <li>Track view only lists channels that actually produce sound, hiding setup-only channels that only send CC/PC/Pitch Bend with no real Note On</li>
+        <li>The library's "scan subfolders" toggle now persists across app launches</li>
+        <li>Tap-to-open-player on the mini screen is restricted to the PLY tab so taps on the INFO tab no longer navigate away</li>
+        <li>Fixed CH10 being incorrectly reset to piano after switching songs (the GM drum bank 128 was lost on the first Program Change)</li>
+      </ul>
+    </div>
+
+    <div class="version-item">
       <div class="version-number">Version 1.12.3</div>
       <div class="version-date">April 2026</div>
       <ul>

@@ -27,6 +27,23 @@
     <h1>更新日志</h1>
 
     <div class="version-item">
+      <div class="version-number">版本 1.12.4</div>
+      <div class="version-date">2026年4月</div>
+      <ul>
+        <li>播放器「正在播放」页面的频谱动画改为基于实时活跃音符绘制,旋律与鼓点的节奏可以直观反映在柱状图上</li>
+        <li>音轨与歌词视图顶部新增紧凑标题栏,切歌时不再需要回到正在播放页面才能确认当前曲目名称</li>
+        <li>主界面小屏幕的 INFO 视图新增 CH10 鼓组音色行,实时显示当前鼓组音色</li>
+        <li>从 MIDI 音轨视图进入的通道声音设置页标题改为「播放声音设置」,修改只会临时作用于当前 MIDI 播放,不会污染您保存的通道配置;首次进入会有弹窗说明</li>
+        <li>主界面小屏幕的第二个标签从虚拟波形可视化 (VIS) 改为播放信息 (PLY),自动显示当前 MIDI 文件名、进度条和时间;打开/关闭 MIDI 文件时会自动切换到对应标签</li>
+        <li>主界面与设置页进入的通道声音设置标题改为「用户声音设置」,与上方「播放声音设置」区分</li>
+        <li>音轨视图只列出真正会发声的通道,隐藏全程仅含 CC/PC/弯音而无真实 Note On 的 setup 通道</li>
+        <li>MIDI 曲库「扫描子文件夹」开关跨应用启动持久保存</li>
+        <li>点击小屏幕进入播放器的快捷操作限定在 PLY 标签下,避免在 INFO 标签下误触</li>
+        <li>修复切歌后 CH10 有时被错误还原成钢琴的问题 (GM 鼓组 bank 128 在 Program Change 时丢失)</li>
+      </ul>
+    </div>
+
+    <div class="version-item">
       <div class="version-number">版本 1.12.3</div>
       <div class="version-date">2026年4月</div>
       <ul>
