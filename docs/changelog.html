@@ -27,6 +27,15 @@
     <h1>Changelog</h1>
 
     <div class="version-item">
+      <div class="version-number">Version 1.14.1</div>
+      <div class="version-date">April 2026</div>
+      <ul>
+        <li>Fixed a bug where BLE MIDI keyboards already paired with the system could not be connected. The device list now correctly handles keyboards discovered by the app's own scan as well as ones Android had already enumerated.</li>
+        <li>Fixed a leak where every BLE scan added another device-list listener that was never cleaned up, causing the device list to refresh at an ever-growing rate after extended use.</li>
+      </ul>
+    </div>
+
+    <div class="version-item">
       <div class="version-number">Version 1.14.0</div>
       <div class="version-date">April 2026</div>
       <ul>
