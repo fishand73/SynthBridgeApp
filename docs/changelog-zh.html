@@ -27,6 +27,19 @@
     <h1>更新日志</h1>
 
     <div class="version-item">
+      <div class="version-number">版本 1.14.5</div>
+      <div class="version-date">2026年4月</div>
+      <ul>
+        <li>大幅提升蓝牙 MIDI 兼容性，特别是 OnePlus / OxygenOS 等机型。部分机型之前会出现"BLE MIDI 连接成功但收不到任何 MIDI 信号"的情况：插件会在 GATT 验证完成后重新打开输出端口，绕开 Android 在连接过程中自动重新配对（BONDED → BONDING → BONDED）导致的数据通路中断。</li>
+        <li>已配对的 BLE MIDI 设备在应用启动时即可在设备选择器中看到，无需先扫描一次再连接常用的键盘。</li>
+        <li>单次会话中 BLE 连接失败累计 3 次后，会弹出兼容性提示对话框，附上开发者邮箱，欢迎把具体机型反馈回来以便我们进一步适配。</li>
+        <li>修复"蓝牙未开启"的检测：关闭蓝牙时点击扫描会即时弹出提示，缓存的蓝牙设备也不会继续留在列表里。</li>
+        <li>修复 Android MIDI 插件启动蓝牙中心时的原生崩溃（<code>IllegalStateException: Reply already submitted</code>），部分首次扫描场景会触发。</li>
+        <li>幕后：新增 BLE 连接漏斗的精细埋点，后续再出现兼容性问题时可以直接按机型定位，而不再靠猜。</li>
+      </ul>
+    </div>
+
+    <div class="version-item">
       <div class="version-number">版本 1.14.3</div>
       <div class="version-date">2026年4月</div>
       <ul>

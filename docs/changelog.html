@@ -27,6 +27,19 @@
     <h1>Changelog</h1>
 
     <div class="version-item">
+      <div class="version-number">Version 1.14.5</div>
+      <div class="version-date">April 2026</div>
+      <ul>
+        <li>Major Bluetooth MIDI compatibility improvements, especially on OnePlus, OxygenOS and similar Android builds. Several models where BLE MIDI would connect but silently fail to deliver MIDI bytes now work reliably: the plugin now re-wires the output port against the live GATT session after Android's mid-connect rebond churn.</li>
+        <li>Paired BLE MIDI devices are now visible in the device picker as soon as the app launches — no need to run a Bluetooth scan first just to reconnect the keyboard you already paired.</li>
+        <li>After three failed Bluetooth connection attempts in a session, SynthBridge now surfaces a compatibility dialog with the developer's email so you can report the specific device and we can investigate.</li>
+        <li>Fixed the "Bluetooth is off" detection: the prompt now appears instantly when you tap Scan with Bluetooth disabled, and cached Bluetooth devices are no longer shown while the adapter is off.</li>
+        <li>Fixed a native-side crash in the Android MIDI plugin's Bluetooth-central startup path (<code>IllegalStateException: Reply already submitted</code>) that could surface on first scan.</li>
+        <li>Under the hood: finer-grained analytics on the BLE connection funnel so we can attribute future failures to specific device models rather than guessing.</li>
+      </ul>
+    </div>
+
+    <div class="version-item">
       <div class="version-number">Version 1.14.3</div>
       <div class="version-date">April 2026</div>
       <ul>
