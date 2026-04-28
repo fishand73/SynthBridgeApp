@@ -27,6 +27,15 @@
     <h1>Changelog</h1>
 
     <div class="version-item">
+      <div class="version-number">Version 1.14.6</div>
+      <div class="version-date">April 2026</div>
+      <ul>
+        <li>Fixed a native "Reply already submitted" crash that some Android devices hit when reconnecting BLE MIDI after a disconnect.</li>
+        <li>Fixed a notification crash on Android 8.0 and earlier — the notification builder was incorrectly calling post-Oreo channel APIs on devices that don't support them.</li>
+      </ul>
+    </div>
+
+    <div class="version-item">
       <div class="version-number">Version 1.14.5</div>
       <div class="version-date">April 2026</div>
       <ul>
