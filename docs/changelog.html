@@ -30,6 +30,10 @@
       <div class="version-number">Version 1.14.6</div>
       <div class="version-date">April 2026</div>
       <ul>
+        <li>Android RTP-MIDI Network Session — connect to Mac, iPad, or other RTP-MIDI hosts over Wi-Fi without a USB cable. Toggle it under Settings → MIDI → RTP-MIDI Network Session.</li>
+        <li>RTP-MIDI device list now shows each peer's IP and endpoint, and lets you disconnect peers individually. Tapping Disconnect now reaches the remote within a few seconds (previously the remote could take up to a minute to time out).</li>
+        <li>Fixed an occasional startup crash on Android 12+ when the main thread was busy and the foreground audio service couldn't call startForeground in time.</li>
+        <li>Hardened the startup path against an unused AdMob initialization provider that could crash the process before the Flutter engine was ready.</li>
         <li>Fixed a native "Reply already submitted" crash that some Android devices hit when reconnecting BLE MIDI after a disconnect.</li>
         <li>Fixed a notification crash on Android 8.0 and earlier — the notification builder was incorrectly calling post-Oreo channel APIs on devices that don't support them.</li>
       </ul>

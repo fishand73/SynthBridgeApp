@@ -30,6 +30,10 @@
       <div class="version-number">版本 1.14.6</div>
       <div class="version-date">2026年4月</div>
       <ul>
+        <li>Android 新增 RTP-MIDI 网络会话:通过 Wi-Fi 与 Mac、iPad 等支持 RTP-MIDI 的设备直接通讯,无需 USB 数据线。设置入口在 设置 → MIDI → RTP-MIDI 网络会话。</li>
+        <li>RTP-MIDI 设备列表显示每个对端的 IP 与端点详情,支持按单个 peer 断开;点"断开"几秒钟内远端就能感知连接终止(原来对端最长可能要等约一分钟才超时)。</li>
+        <li>修复 Android 12+ 上偶发的启动崩溃:前台音频服务在主线程繁忙时未能在 5 秒内调用 startForeground,触发 ForegroundServiceDidNotStartInTimeException。</li>
+        <li>加固启动路径,移除一个未启用的 AdMob 初始化 provider,避免它在 Flutter engine 启动前因配置缺失拉崩进程。</li>
         <li>修复部分 Android 设备在 BLE MIDI 断开后重连时偶发的"Reply already submitted"原生崩溃。</li>
         <li>修复 Android 8.0 及以下设备的通知构建崩溃 —— 通知 builder 在不支持 channel API 的旧系统上错误调用了 Oreo 之后才有的接口。</li>
       </ul>
