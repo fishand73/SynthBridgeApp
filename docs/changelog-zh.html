@@ -27,6 +27,33 @@
     <h1>更新日志</h1>
 
     <div class="version-item">
+      <div class="version-number">版本 1.16.0</div>
+      <div class="version-date">2026年5月</div>
+      <ul>
+        <li>新增全局半音移调，支持滑条和步进按钮调节，并可在小屏幕中查看当前移调状态。</li>
+        <li>新增 MIDI CC 映射设置，外部控制器可控制常用参数，并支持直接映射主音量。</li>
+        <li>新增竖屏布局切换按钮，可在主界面快速循环切换不同演奏布局。</li>
+        <li>优化小屏幕 INFO 显示，移调、节拍器和当前音符状态更清晰。</li>
+        <li>优化横屏布局，将小屏幕快捷音色按钮移动到底部，为主显示区域留出更多空间。</li>
+        <li>优化新用户和交互式引导，补充移调与 MIDI CC 说明，并更准确地高亮布局切换、全局效果器和节拍器控件。</li>
+        <li>优化打击垫显示，增加少量内边距，并让标签文字自适应缩放。</li>
+        <li>修复新安装后首次搜索蓝牙 MIDI 设备可能失败的问题，包括已配对设备需要重启应用后才出现的情况。</li>
+        <li>修复虚拟 MIDI 输出在部分情况下可能导致卡顿或 ANR 的问题。</li>
+      </ul>
+    </div>
+
+    <div class="version-item">
+      <div class="version-number">版本 1.15.0</div>
+      <div class="version-date">2026年5月</div>
+      <ul>
+        <li>新增 Android RTP-MIDI 网络 MIDI 支持，可在同一局域网中发现并连接 Mac、iPad 或其他 RTP-MIDI 主机。</li>
+        <li>改进 RTP-MIDI 实时收发可靠性，包括 NoteOff 投递和拥塞处理，降低延迟、丢音与卡音风险。</li>
+        <li>改进 Wi-Fi 切换后的 RTP-MIDI 地址刷新与重连表现。</li>
+        <li>修复近期 Android 稳定性问题，包括前台通知、可拖拽面板 attach 以及 native library 打包相关问题。</li>
+      </ul>
+    </div>
+
+    <div class="version-item">
       <div class="version-number">版本 1.14.6</div>
       <div class="version-date">2026年4月</div>
       <ul>
